@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -12,6 +18,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./scripts/effect.js"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -164,7 +171,9 @@
                                     <img src="./img/mouse-lavel.svg">
                                 </div>
                                 <div class="mouse-container">
-                                    <img src="./img/mouse.svg">
+                                    <a href="#top">
+                                        <img src="./img/mouse.svg">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -173,12 +182,12 @@
             </div>
         </div>
     </header>
-    <section id="introduce" class="animate__animated animate__backInLeft" >
+    <section id="introduce">
         <div class="container">
             <div class="introduce-wrapper">
-                <div class="video-section">
+                <div id='introduce-left' class="video-section">
                     <div class="video">
-                        <div class="play-btn">
+                        <div id='play-btn' class="play-btn">
                             <ion-icon name="play"></ion-icon>
                         </div>
                         <video id='video-player' width="400" poster='./img/poster1.svg'>
@@ -186,7 +195,7 @@
                         </video>
                     </div>
                 </div>
-                <div class="about">
+                <div id='introduce-right' class="about">
                     <div class="number-img">
                         <img src="./img/02.svg">
                     </div>
@@ -195,8 +204,8 @@
                         <div class="all-video-section"> 
                             <div class="video">
 
-                                <div class="play-btn">
-                                    <ion-icon name="play"></ion-icon>
+                                <div id='play-btn' class="play-btn">
+                                    <ion-icon  name="play"></ion-icon>
                                 </div>
 
                                 <video id='video-player scroll-video' height='200' width="350"  poster='./img/poster2.svg'>
@@ -206,8 +215,8 @@
                             </div>
     
                             <div class="video">
-                                <div class="play-btn">
-                                    <ion-icon name="play"></ion-icon>
+                                <div id='play-btn' class="play-btn">
+                                    <ion-icon  name="play"></ion-icon>
                                 </div>
                                 <video id='video-player' height='200px' width="350"  poster='./img/poster2.svg'>
                                     <source src='./videos/video1.mp4' type="video/mp4"/>
@@ -215,8 +224,8 @@
                                 
                             </div>
                             <div class="video">
-                                <div class="play-btn">
-                                    <ion-icon name="play"></ion-icon>
+                                <div id='play-btn' class="play-btn">
+                                    <ion-icon  name="play"></ion-icon>
                                 </div>
                                 <video id='video-player' height='200px' width="350"  poster='./img/poster2.svg'>
                                     <source src='./videos/video1.mp4' type="video/mp4"/>
@@ -354,7 +363,9 @@
                             <img src="./img/mouse-lavel.svg">
                         </div>
                         <div class="mouse-container">
-                            <img src="./img/mouse.svg">
+                            <a href="#top">
+                                <img src="./img/mouse.svg">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -371,7 +382,22 @@
                     <h2 class='default_heading' >TESTIMONIALS</h2>
                     <p class='default_paragraph' >BVarb.com is an organization and business platform that uses the art of the Arbitrage industry with the opportunity to make money through Arbitrage, using its executive technology levers such as big data, algorithms and artificial intelligence and Arbitrage in In the case of Altcoins and economic</p>
                     <div class="testimonials-videos">
-                        <h1>Coming soon video section</h1>
+                        <div class="video">
+                            <div id='play-btn' class="play-btn">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                            <video id='video-player scroll-video' height='200' width="350"  poster='./img/poster2.svg'>
+                                <source src='./videos/video1.mp4' type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="video">
+                            <div id='play-btn' class="play-btn">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                            <video id='video-player scroll-video' height='200' width="350"  poster='./img/poster2.svg'>
+                                <source src='./videos/video1.mp4' type="video/mp4"/>
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonials-img">
@@ -415,6 +441,83 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-menu">
+                <div class='footer-about'>
+                    <h5 class='default_heading_h5'>WHO ARE WE</h5>
+                    <p class='default_paragraph'>BVarb.com is not less than a family, who is present in five continents globally and BVarb.com further wants to enhance the family by gathering in the team, people who are like minded and make them part of the team locally and we the BVarb.com company provides Arbitrage of E-entertainment platform with the help of Big Data algorithm tools.</p>
+                    <div class='btn-container'>
+                        <button class='btn btn-dark'>
+                            <span>Read</span> <p> More <img src="./img/Arrow-Right-color.svg" >
+                            </p> 
+                        </button>
+                    </div>
+                </div>
+                <div class='footer-links'>
+                    <h5 class='default_heading_h5'>USEFUL LINKS</h5>
+                    <ul>
+                        <li><a class="default_paragraph" href="#">Crypto Way</a></li>
+                        <li><a class="default_paragraph" href="#"> Entertainment</a></li>
+                        <li><a class="default_paragraph" href="#"> FAQ</a></li>
+                        <li><a class="default_paragraph" href="#"> Term & Conditions</a></li>
+                        <li><a class="default_paragraph" href="#"> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class='footer-follow'>
+                    <h5 class='default_heading_h5'>FOLLOW US</h5>
+                    <p class="default_paragraph">The more specific it is, the stronger and clearer the scenario that the BVarb.com will be and the more often people will think about the BVarb.com contest.
+                    </p>
+                    <p class="default_paragraph footer-email">info@bvarb.com</p>
+                </div>
+                <div class='footer-contact'>
+                    <h5 class='default_heading_h5'>CONTACT US</h5>
+                    <p class="default_paragraph">Your questions and comments are important to us. We've got everything covered for your needs</p>
+
+                    <!-- ? -->
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon">
+                            <img src='./img/Message.svg' alt="" />
+                        </i>
+                        <input class="input-field" type="email" placeholder="example@gmail.com" name="email"/>
+                    </div>
+                    <textarea
+                    placeholder='Type your message here'
+                     name="" id="" cols="30" rows="10"></textarea>
+                     
+                    <!-- ? -->
+                    <div class='btn-container'>
+                        <button class='btn btn-dark'>
+                            <span>Read</span> <p> More <img src="./img/Arrow-Right-color.svg" >
+                            </p> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-nav">
+                    <div>
+                        <img src='./img/socialMedia.svg' alt="socialMedia" />
+                    </div>
+                    <div>
+                        <div>
+                            <img src='./img/visa-card.svg' alt="visaCard" />
+                        </div>
+                        <div>
+                            <img src='./img/master-card.svg' alt="masterCard" />
+                        </div>
+                        <div>
+                            <img src='./img/bitcoin.svg' alt="bitcoin" />
+                        </div>
+                        <div>
+                        <img src='./img/tether.svg' alt="bitcoin" />
+
+                        </div>
+                        <div>
+                        <img src='./img/bank.svg' alt="bank" />
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </section>
     <script>
@@ -425,5 +528,6 @@
     </script>
     <script src="./scripts/navbar.js"></script> 
     <script src="./scripts/menu.js"></script>
+    <script src="./scripts/video.js"></script>
 </body>
 </html>

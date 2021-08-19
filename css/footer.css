@@ -1,8 +1,8 @@
 #footer{
     margin-top:100px;
-    background-image: url(../img/footer-bd.svg);
+    background: #ffffff07 url(../img/footer-bd.svg) center center;
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,14 +27,15 @@
     flex-wrap: wrap;
 }
 .footer-flags>.flags>div.flag{
-    width: 219px;
+    margin-top:10px;
+
+    max-width: 219px;
     height: 52px;
     background: #0C0B0B;
     border-radius: 4px;
     display: flex;
     margin-right: 5px;
     align-items: center;
-
 }
 .footer-flags>.flags>div.flag>p{
     font-weight: 600;
@@ -42,8 +43,131 @@
     line-height: 0px;
     text-transform: capitalize;
     color: #FFFFFF;
-    display:flex
+    display:flex;
+    padding-right: 10px;
 }
 .footer-flags>.flags>div.flag>img{
     padding:10px
+}
+/* footer-menu */
+.footer-menu{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 485px;
+    background: rgba(12, 11, 11, 0.678);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:50px 30px;
+}
+.footer-about{
+    /* flex:1 1 ; */
+    max-width:421px;
+    min-width: 300px;
+}
+.footer-links{
+    /* flex:1 1; */
+    width:214px;
+}
+.footer-follow{
+    /* flex:1 1 ; */
+    width:244px;
+}
+.footer-contact{
+    /* flex:1 1; */
+    width: 254px;
+}
+.footer-menu>div>h5{
+    padding-bottom: 30px;
+}
+.footer-links>ul{
+    list-style: none;
+}
+.footer-email{
+    margin-top:50px
+}
+
+.input-container{
+    margin-top:20px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 17px;
+  background: #19191a;
+
+border-radius: 3px;
+}
+.input-container>.icon{
+    padding: 9px 10px 6px 10px
+    
+}
+.input-container>.icon>img{
+    width:18px;
+    height: 18px;
+}
+.input-container>input{
+    background: #19191a;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #C4A36B;
+}
+
+.input-container>input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: GT Walsheim Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 196% */
+    text-transform: capitalize;
+    color: #C4A36B;
+  }
+
+  textarea{
+    margin-top:20px;
+    display: flex;
+    width: 100%;
+    background: #19191a;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    color: #C4A36B;
+  }
+textarea::placeholder{
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #C4A36B;
+    opacity: 0.5;
+  }
+
+
+
+.footer-contact>.btn-container{
+    margin-top: 20px;
+}
+.footer-nav{
+    width: 100%;
+    display:flex;
+    padding: 28px !important;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+/* .footer-nav>div{
+    flex-basis: ;
+} */
+.footer-nav>div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-nav>div:last-child>div{
+    flex: 1 1 20px;
+}
+.footer-nav>div:last-child>div>img{
+    margin-left: 15px;
+    height: 16px;
+}
+.footer-nav>div:first-child>img{
+    height: 20px;
 }

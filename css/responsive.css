@@ -4,6 +4,11 @@
         top: 50% !important;
         left: 50%;
     }
+    .testimonials-videos>.video>.play-btn{
+        position: absolute;
+        top: 47px !important;
+        left:30%;
+    }
     
 }
 
@@ -48,6 +53,36 @@
         top: 44% !important;
         left: 43%;
     }
+    .testimonials-img>a>img{
+        width: 150px;
+    }
+    .testimonials-img>a{
+        position: absolute;
+        top: 10%;
+        left: -70px;
+    }
+    .arbitrage-wrapper>img{
+        margin-right: 20px;
+    }
+    .arbitrage-article{
+        justify-content:space-evenly
+    }
+    .flags{
+        justify-content: space-evenly
+    }
+    .testimonials-wrapper{
+        margin: 0px 15px;
+    }
+}
+@media screen and (max-width:650px) {
+    .testimonials-img>a{
+        position: absolute;
+        top: 20%;
+        left: -70px;
+    }
+    #footer {
+        margin-top: 0px;
+    }    
 }
 @media screen and (max-width:550px) {
     .all-video-section{
@@ -66,7 +101,9 @@
         margin:0px !important;
         line-height:10px
     }
-    
+    .testimonials-wrapper{
+        margin: 0px 20px !important;
+    }
 }
 @media screen and (max-width:450px) {
     .all-video-section{
@@ -82,5 +119,16 @@
         position: absolute;
         top: 36% !important;
         left: 37%;
+    }
+    .footer-flags > .flags {
+        justify-content: center;
+    }
+    .footer-nav>div:last-child{
+        margin: 30px 0px;
+        padding:0 !important;
+    }
+
+    .footer-nav>div:last-child>div:first-child>img{
+        margin:0 !important;
     }
 }
